@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="CSS Tabs" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<title>Ahmed Bayoumy, PhD</title>
+<meta charset=utf-8>
+</head>
+<body>
+  <div class="tabbed">
+    <input type="radio" name="tabs" id="tab-nav-1" checked>
+    <label for="tab-nav-1">About</label>
+    <input type="radio" name="tabs" id="tab-nav-2">
+    <label for="tab-nav-2">CV</label>
+    <input type="radio" name="tabs" id="tab-nav-3">
+    <label for="tab-nav-3">Projects</label>
+    <input type="radio" name="tabs" id="tab-nav-4">
+    <label for="tab-nav-4">Publications</label>
+    <input type="radio" name="tabs" id="tab-nav-5">
+    <label for="tab-nav-5">Teaching</label>
+    <div class="tabs">
+      <div><p>Dr. Bayoumy is a software engineer at Siemens Digital Industries Software. He is responsible for developing innovative strategies and software solutions related to multidisciplinary design optimization (MDO) of complex engineering systems. Before joining Siemens, Dr. Bayoumy was first a PhD student and then a postdoctoral researcher at the Systems Optimization Laboratory in the Department of Mechanical Engineering of McGill University. His research was co-funded by the Canadian National Science and Engineering Research Council and Siemens Energy, which enabled him to implement and use his relative adequacy framework on aero-derivative gas turbine MDO problems.</p></div>
+      <div>
+        <p><embed src="files/Resume.pdf" type="application/pdf" width="100%" height="600px" /></p></div>
+      <div><p style="font-size: 20px">(2015-2020) Multimodel management in single- and multi-disciplinary design optimization</p>
+        <p> 
+          Fund: Mechanical Engineering Doctoral Award (MEDA)
+        <ul style="font-size: 14px">
+          <li>Developed a novel relative adequacy framework for managing the use of multiple models during design optimization</li>
+          <li>Developed an algorithm that combines error surrogates, relative adequacy spaces, trust- region techniques and derivative-free optimization for solving multifidelity single-disciplinary optimization problems.</li>
+          <li>Developed two algorithms that extend the algorithm mentioned above in item 2 for solving multi-fidelity time-invariant multidisciplinary design optimization problems using a multidisciplinary feasible architecture with implicit and explicit multidisciplinary analysis error formulations.</li>
+          <li>Developed an algorithm that extends the algorithm mentioned above in item 2 for solving multi-fidelity time-invariant multidisciplinary design optimization problems using non-hierarchical analytical target cascading, a distributed individual discipline feasible architecture.</li>
+          <li>Developed an algorithm that extends the explicit algorithm mentioned above in item 3 for solving multi-fidelity time-dependent multidisciplinary analysis problems with tight feedback coupling.</li>
+          <li>Developed an algorithm that extends the algorithm mentioned above in item 5 for solving multi-fidelity time-dependent multidisciplinary design optimization problems.</li>
+        </ul>
+        </p>
+
+      <p style="font-size: 20px">(2018-2020) Digital Platform for Multidisciplinary Analysis and Design Optimization (DMADO)</p>
+        <p> 
+          Fund: Canadian Natural Sciences and Engineering Research Council of Canada (NSERC) and Siemens Energy (MTL)
+        <ul style="font-size: 14px">
+          <li>Developed a python package (PyNoHiMDO) for running multidisciplinary design optimization (MDO) problems using a penalty-based distributed interdisciplinary feasible (IDF) formulation known as non-hierarchical analytical target cascading (NHATC.)</li>
+          <li>Utilized PyNoHiMDO to automate and accelerate the convergence of the feedback coupling between the gas turbine performance analysis and secondary air system analysis (engine bleeds flow analysis.)</li>
+          <li>Set up the MDO workflow of the intermediate pressure turbine (IPT) blade of the aero-derivative gas turbine engines (AGT) using two MDO architectures: monolithic multidisciplinary feasible (MDF) and interdisciplinary feasible (IDF) approaches.</li>
+          <li>Integrated the developed PyNoHiMDO into ACES, AutoOpti and HEEDS.</li>
+        </ul>
+
+
+      </p></div>
+      <div><p> <strong>Articles in Archival Journals: </strong>
+        <ol>
+        <li>A. Bayoumy and M. Kokkolaras. Multi-model Management for Time-dependent Multidisciplinary Design Optimization Problems. Structural and Multidisciplinary Optimization, 61(5):1821–1841, 2020.</li>
+        <li>A. Bayoumy and M. Kokkolaras. A Relative Adequacy Framework for Multimodel Management in Multidisciplinary Design Optimization. Structural and Multidisciplinary Optimization, 62(4):1701–1720, 2020.</li>
+        <li>A. Bayoumy and M. Kokkolaras. A Relative Adequacy Framework for Multi-Model Management in Design Optimization. Journal of Mechanical Design, 142(2), 2019.</li>
+        <li>A. Bayoumy, A. Nada, and S. Megahed. Methods of Modeling Slope Discontinuities in Large Size Wind Turbine Blades using Absolute Nodal Coordinate Formulation. Proceedings of the Institution of Mechanical Engineers, Part K: Journal of Multi-body Dynamics, 228(3):314–329, 2014.</li>
+        <li>A. Bayoumy, A. Nada, and S. Megahed. A Continuum Based Three-Dimensional Modeling of Wind Turbine Blades. Journal of Computational and Nonlinear Dynamics, 8(3), 2012.</li>
+      </ol>
+      </p>
+      <p><strong>Articles in Conference Proceedings</strong>
+        <ol>
+        <li>T. Peoc’h, A. Bayoumy, M. Staniszewski, H. Moustapha, M. Kokkolaras, and F. Garnier. Integration of Secondary Air System for Multidisciplinary Design Optimization of Gas Turbines. In AERO2019, Laval, Quebec, Canada, 2019. Canadian Aeronautics and Space Institute.</li>
+        <li>A. Bayoumy and M. Kokkolaras. A Relative Adequacy Framework for Multimodel Manage- ment in Multidisciplinary Design Optimization. In Multidisciplinary Analysis and Optimiza- tion Conference, Atlanta, Georgia, USA, 2018. AIAA.</li>
+        <li>A. Bayoumy and M. Kokkolaras. A Reference Error Formulation for Multi-fidelity Design Optimization. In International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, volume 58134, Cleveland, Ohio, USA, 2017. ASME.</li>
+        <li>A. Papadopoulos, M. Ismail, and A. Bayoumy. Dynamic Amplification Factor for Rigid and Flexible Piping System due to Steam Hammer Transient Load. In ASME International Mechanical Engineering Congress and Exposition, volume 57397, Houston, Texas, USA, 2015. ASME.</li>
+        <li>A. Bayoumy and A. Papadopoulos. Time History Steam Hammer Analysis for Critical Hot Lines in Thermal Power Plants. In International Mechanical Engineering Congress and Exposition, page 11, Montreal, Quebec, Canada, 2014. ASME.</li>
+        <li>A. Bayoumy, A. Nada, and S. Megahed. Use of Forward Dynamics Model for Designing Large-size Wind Turbine Blades. In ASME International Mechanical Engineering Congress and Exposition, volume 56253, San Diego, California, USA, 2013. ASME.</li>
+        <li>A. Bayoumy, A. Nada, and S. Megahed. Modeling Slope Discontinuity of Large Size Wind-turbine Blade Using Absolute Nodal Coordinate Formulation. In International De- sign Engineering Technical Conferences and Computers and Information in Engineering Conference, volume 45059, pages 105–114, Chicago, Illinois, USA, 2012. ASME.</li>
+      </ol>
+      </p>
+    </div>
+    <div><p>
+      <li>(2016-2019) MECH 559, 501, 502: Engineering Systems Optimization, McGill University, Montreal, Canada
+        <p> I have worked as a teaching assistant and occasionally substitute lecturer for these courses. My lectures focused on multidisciplinary design optimization (MDO) architectures and their implementation to solve realistic MDO problems. I demonstrated the importance of considering multidisciplinary interactions to leverage system performance by means of running examples. Nonetheless, solving a fully-coupled MDO problem all at once using the multidisciplinary feasible architecture (MDF) is an intricate process. Typically, MDF approaches do not converge, within a reasonable computational budget, when they are used to solve a fully-coupled MDO problem all at once. That's why interdisciplinary feasible architectures (IDF) are honored to solve fully-coupled MDO problems at any design level. I showed the students how to decompose the fully-coupled MDO problem into subproblems and how to use and implement the Alternating Direction Method of Multipliers (ADMM) as a coordinator to ensure the consistency of design solutions obtained by the partitioned subproblems. </p> </li>
+      <li>(2017-2019) MECH 290: Design Graphics for Mechanical Engineering using SolidWorks, McGill University, Montreal, Canada
+      <p>I demonstrated the Computer-Aided Design (CAD) process at different design levels, including free-hand sketching; from geometry construction to manufacturing drawings; the technology and standards of engineering graphic communication; designing with CAD software. The role of visualization in the production of mechanical engineering designs. I also demonstrated how the key-features of SolidWorks facilitates achieving the aforementioned objectives. </p>
+      </li>
+      <li>(2016, 2018) MECH 292: Conceptual Design}{McGill University, McGill University, Montreal, Canada
+        <p> I have worked as a teaching assistant for that course. I was responsible on introducing and demonstrating engineering design concepts and how to formulate design problems, generate ideas, and conduct a feasibility study. I also introduced the principles of preliminary design, design, analysis, design evaluation, project management, and optimal design to students. I helped them complete and present their design projects required by that course.</p>
+      </li>
+      <li>(2016) MECH 539: Computational Aerodynamics, McGill University, Montreal, Canada
+        <p> I helped the students complete their software projects required by the course. The projects aimed at leveraging the students understanding to CFD numerical methods by implementing and applying them on realistic physics-based simulation problems. </p>
+      </li>
+      <li>(2018-2019) FACC 400: Engineering Professional Practice, McGill University, Montreal, Canada</li>
+    </p></div>
+  </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+</body>
+</html>
