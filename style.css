@@ -60,7 +60,8 @@ body {
 #tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
 #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
 #tab-nav-4:checked ~ .tabs > div:nth-of-type(4),
-#tab-nav-5:checked ~ .tabs > div:nth-of-type(5){
+#tab-nav-5:checked ~ .tabs > div:nth-of-type(5),
+#tab-nav-6:checked ~ .tabs > div:nth-of-type(6){
   transform: rotateX(0);
   opacity: 1;
   z-index: 1;
