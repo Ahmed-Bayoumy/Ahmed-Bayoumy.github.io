@@ -1,8 +1,10 @@
 <html>
 <head>
 <meta name="description" content="CSS Tabs" />
-<link rel="stylesheet" href="style.css">
-<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="css/glightbox.min.css" />
+<link rel="stylesheet" href="css/all.min.css" />
 <title>Ahmed Bayoumy, PhD</title>
 <meta charset=utf-8>
 </head>
@@ -11,7 +13,7 @@
     <header>
       <div class="toggle"></div>
     </header>
-    <video src="files/Models_anim.mp4" muted loop autoplay></video>
+    <video src="files/anim.mp4" muted loop autoplay></video>
   </section>
   <!-- <div class="showcase">
     <img src="files/MDO3.png" height="400px">
@@ -32,11 +34,46 @@
     <label for="tab-nav-6">Research</label>
     <input type="radio" name="tabs" id="tab-nav-7">
     <label for="tab-nav-7">Development</label> 
+    <input type="radio" name="tabs" id="tab-nav-8">
+    <label for="tab-nav-8">Blogs</label>
     <div class="tabs">
       <div>
         <p>
-          Dr. Bayoumy is a software engineer at Siemens Digital Industries Software. He is responsible for developing innovative strategies and software solutions related to multidisciplinary design optimization (MDO) of complex engineering systems. Before joining Siemens, Dr. Bayoumy was first a PhD student and then a postdoctoral researcher at the Systems Optimization Laboratory in the Department of Mechanical Engineering of McGill University. His research was co-funded by the Canadian National Science and Engineering Research Council and Siemens Energy, which enabled him to implement and use his relative adequacy framework on aero-derivative gas turbine MDO problems.
+          Dr. Bayoumy is a researcher and software engineer at Siemens Digital Industries Software. He is responsible for developing innovative strategies and software solutions for multidisciplinary design optimization (MDO) of complex engineering systems, AI, and autoML. Before joining Siemens, Dr. Bayoumy was a PhD student and then a postdoctoral researcher at the Systems Optimization Laboratory in the Department of Mechanical Engineering at McGill University. His research was co-funded by the Canadian National Science and Engineering Research Council and Siemens Energy, which enabled him to use his systems engineering MDO and AI expertise to implement his novel relative adequacy framework on aero-derivative gas turbine MDO problems.
         </p>
+          <!-- My photo -->
+          <center> <img src="img/AB.jpg" height="300px" alt="Avatar" position="center" alt="Profile picture"> </center>
+          
+          <!-- Begin Top Nav -->
+          <nav id="top-nav-bar" class="nav-bar top-nav">
+            <center> <h1 class="logo"><a href="index.html">Ahmed Bayoumy, PhD</a></h1> </center>
+
+            <center>
+                <a href="mailto:ahmed.bayoumy@mail.mcgill.ca"
+                  aria-label="Link to LinkedIn">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/in/ahmed-bayoumy-phd-29b50658"
+                  aria-label="Link to LinkedIn">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://github.com/Ahmed-Bayoumy" aria-label="Link to GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://scholar.google.com.eg/citations?user=70ycHBoAAAAJ&hl=en" aria-label="Link to GoogleScholar">
+                  <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.researchgate.net/profile/Ahmed-Bayoumy-5"
+                  aria-label="Link to researchgate">
+                  <i class="fab fa-researchgate" aria-hidden="true"></i>
+                </a>
+
+            </center>
+          </nav>
+        
       </div>
       <div>
         <p><embed height=700px src="files/Resume.pdf" type="application/pdf" width="100%" height="600px" />
@@ -49,12 +86,12 @@
         <p> 
           Fund: Mechanical Engineering Doctoral Award (MEDA)
         <ul style="font-size: 14px">
-          <li>Developed a novel relative adequacy framework for managing the use of multiple models during design optimization</li>
-          <li>Developed an algorithm that combines error surrogates, relative adequacy spaces, trust- region techniques and derivative-free optimization for solving multifidelity single-disciplinary optimization problems.</li>
-          <li>Developed two algorithms that extend the algorithm mentioned above in item 2 for solving multi-fidelity time-invariant multidisciplinary design optimization problems using a multidisciplinary feasible architecture with implicit and explicit multidisciplinary analysis error formulations.</li>
-          <li>Developed an algorithm that extends the algorithm mentioned above in item 2 for solving multi-fidelity time-invariant multidisciplinary design optimization problems using non-hierarchical analytical target cascading, a distributed individual discipline feasible architecture.</li>
-          <li>Developed an algorithm that extends the explicit algorithm mentioned above in item 3 for solving multi-fidelity time-dependent multidisciplinary analysis problems with tight feedback coupling.</li>
-          <li>Developed an algorithm that extends the algorithm mentioned above in item 5 for solving multi-fidelity time-dependent multidisciplinary design optimization problems.</li>
+          <li>Developed a novel <em>relative adequacy framework (RAF)</em> for managing the use of multiple models during design optimization</li>
+          <li>Developed the RAF algorithm that combines <em>error surrogates, relative adequacy spaces, trust-region techniques and derivative-free optimization</em> for solving multifidelity single-disciplinary optimization problems.</li>
+          <li>Developed two algorithms that extend the RAF algorithm for solving multi-fidelity time-invariant multidisciplinary design optimization problems using a <em>multidisciplinary feasible architecture (MDF)</em> with implicit and explicit multidisciplinary analysis error formulations.</li>
+          <li>Developed an algorithm that extends the RAF algorithm for solving multi-fidelity time-invariant multidisciplinary design optimization problems using non-hierarchical analytical target cascading, a <em>distributed individual discipline feasible architecture (IDF)</em>.</li>
+          <li>Developed an algorithm that extends the explicit RAF-MDF algorithm for solving <em>multi-fidelity time-dependent multidisciplinary analysis</em> problems with tight feedback coupling.</li>
+          <li>Developed an algorithm that extends the RAF-MDF algorithm for solving <em>multi-fidelity time-dependent multidisciplinary design optimization problems</em>.</li>
         </ul>
         </p>
 
@@ -68,6 +105,18 @@
           <li>Utilized PyNoHiMDO to automate and accelerate the convergence of the feedback coupling between the gas turbine performance analysis and secondary air system analysis (engine bleeds flow analysis.)</li>
           <li>Set up the MDO workflow of the intermediate pressure turbine (IPT) blade of the aero-derivative gas turbine engines (AGT) using two MDO architectures: monolithic multidisciplinary feasible (MDF) and interdisciplinary feasible (IDF) approaches.</li>
           <li>Integrated the developed PyNoHiMDO into ACES, AutoOpti and HEEDS.</li>
+        </ul>
+      </p>
+      <p style="font-size: 20px">(2022-present) 
+        Combined algorithm selection and mixed hyperparameter optimization
+      </p>
+        <p> 
+        <ul style="font-size: 14px">
+          <li>Develop a coordination mechanism to coordinate design solutions among various parameter domains</li>
+          <li>Design a CASH algorithm that utilizes derivative-free optimization and Bayesian optimization methods</li>
+          <li>Use mixture of Gaussians to cluster the configuration space for better sampling</li>
+          <li>Test the proposed methods on standard benchmarking problems</li>
+          <li>Apply the proposed approaches on engineering applications</li>
         </ul>
       </p>
       </div>
@@ -140,7 +189,7 @@
           <center><img src="files/Packages.png" height="300px" position="center"></center>
           <ul style="font-size: 14px">
             <li>Orthogonal Mesh Adaptive Direct Search (OMADS)<a href="https://github.com/Ahmed-Bayoumy/OMADS.git"> [Link]</a> (or pip install OMADS)</li>
-            <li>Surrogate Models Library (SML)<a href="https://github.com/Ahmed-Bayoumy/SML.git"> [Link]</a></li>
+            <li>Statistical Learning Models Library (SLML)<a href="https://github.com/Ahmed-Bayoumy/SLML.git"> [Link]</a></li>
             <li>Relative Adequacy Framework (RAF)<a href="https://github.com/Ahmed-Bayoumy/RAF.git"> [Link]</a></li>
             <li>Distributed Multidisciplinary Design Optimization (DMDO)<a href="https://github.com/Ahmed-Bayoumy/DMDO.git"> [Link]</a></li>
             <li>Nonlinear Optimization Benchmarking Library (NOBM)<a href="https://github.com/Ahmed-Bayoumy/NOBM.git"> [Link]</a> (or pip install NOBM)</li>
@@ -149,6 +198,11 @@
       </div>
       
     </div>
+  </div>
+  <div>
+    <p>
+      hkjhkjkjbkjb
+    </p>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
 </body>
